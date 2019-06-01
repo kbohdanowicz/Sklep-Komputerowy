@@ -1,0 +1,36 @@
+<!ENTITY % string "(#PCDATA)">
+<!ENTITY % req "#REQUIRED">
+
+<!ELEMENT sklep (waluty, produkty, pracownicy)>
+<!ELEMENT waluty (waluta+)>
+    <!ELEMENT waluta %string;>
+        <!ATTLIST waluta id ID #IMPLIED>
+
+<!ELEMENT produkty (produkt*)>
+    <!ELEMENT produkt (kategoria?, nazwa, cena, opis, producent)>
+        <!ATTLIST produkt id ID %req;>
+        <!ELEMENT kategoria %string;>
+        <!ELEMENT nazwa %string;>
+        <!ELEMENT cena %string;>
+            <!ATTLIST cena waluta IDREF %req;>
+        <!ELEMENT opis %string;>
+        <!ELEMENT producent %string;>
+
+<!ELEMENT pracownicy (pracownik+)>
+    <!ELEMENT pracownik (adres, imie, nazwisko, pozycja, pensja)>
+        <!ATTLIST pracownik plec (k|m) "m">
+        <!ELEMENT adres (miejscowosc, kodPocztowy, ulica, numer)>
+            <!ELEMENT miejscowosc %string;>
+            <!ELEMENT kodPocztowy %string;>
+            <!ELEMENT ulica %string;>
+            <!ELEMENT numer %string;>
+            <!ELEMENT kontakt ((email,tel)|(tel,email))>
+                <!ELEMENT email %string;>
+                <!ELEMENT tel %string;>
+        <!ELEMENT imie %string;>
+        <!ELEMENT nazwisko %string;>
+        <!ELEMENT pozycja %string;>
+        <!ELEMENT pensja %string;>
+            <!ATTLIST pensja waluta IDREF "PLN">
+
+        <![IGNORE[ <!ELEMENT zdjęcie %string;>]]>

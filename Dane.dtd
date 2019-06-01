@@ -17,18 +17,16 @@
         <!ELEMENT producent %string;>
 
 <!ELEMENT pracownicy (pracownik+)>
-    <!ELEMENT pracownik (adres, imie, nazwisko, pozycja, pensja)>
+    <!ELEMENT pracownik (adres, imie, nazwisko, telefon, pozycja, pensja)>
         <!ATTLIST pracownik plec (k|m) "m">
         <!ELEMENT adres (miejscowosc, kodPocztowy, ulica, numer)>
             <!ELEMENT miejscowosc %string;>
             <!ELEMENT kodPocztowy %string;>
             <!ELEMENT ulica %string;>
             <!ELEMENT numer %string;>
-            <!ELEMENT kontakt ((email,tel)|(tel,email))>
-                <!ELEMENT email %string;>
-                <!ELEMENT tel %string;>
         <!ELEMENT imie %string;>
         <!ELEMENT nazwisko %string;>
+        <!ELEMENT telefon %string;>
         <!ELEMENT pozycja %string;>
         <!ELEMENT pensja %string;>
             <!ATTLIST pensja waluta IDREF "PLN">

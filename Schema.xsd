@@ -1,0 +1,134 @@
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="sklep" type="typSklep">
+        <xs:unique name="id">
+            <xs:selector xpath="./sklep/waluty/waluta"/>
+            <xs:field xpath="@id"/>
+        </xs:unique>
+    </xs:element>
+
+    <xs:complexType name="typSklep">
+        <xs:all>
+            <xs:element name="waluty" type="typeWaluty"/>
+            <xs:element name="produkty" type="typeProdukty"/>
+            <xs:element name="pracownicy" type="typePracownicy"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="typeWaluty">
+        <xs:sequence>
+            <xs:element name="waluta" type="typeWaluta" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="typeWaluta">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="id" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+    <xs:complexType name="typeProdukty">
+        <xs:sequence>
+            <xs:element name="produkt" type="typeProdukt" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="typeProdukt">
+        <xs:sequence>
+            <xs:element name="kategoria" type="xs:string" minOccurs="0"/>
+            <xs:element name="nazwa" type="xs:string"/>
+            <xs:element name="cena" type="typeCena"/>
+            <xs:element name="opis" type="listOpis"/>
+            <xs:element name="producent" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>                                    <!---->
+    </xs:complexType>
+
+    <xs:complexType name="typeCena">
+        <xs:simpleContent>
+            <xs:extension base="xs:double">
+                <xs:attribute name="waluta" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:simpleType name="listOpis">
+        <xs:list itemType="xs:string"/>
+    </xs:simpleType>
+
+
+    <xs:complexType name="typePracownicy">
+        <xs:sequence>
+            <xs:element name="pracownik" type="typePracownik" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="typePracownik">
+        <xs:choice>
+            <xs:group ref="danePracownik"/>
+        </xs:choice>
+        <xs:attribute type="xs:string" name="plec" use="required"/>
+    </xs:complexType>
+
+    <xs:group name="danePracownik">
+        <xs:sequence>
+            <xs:element name="adres"  type="typeAdres"/>
+            <xs:element name="imie" type="typeImie"/>
+            <xs:element name="nazwisko" type="typeImie"/>
+            <xs:element name="telefon"  type="typeTelefon"/>
+            <xs:element name="pozycja" type="typePozycja"/>
+            <xs:element name="pensja" type="typePensja"/>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:simpleType name="typeImie">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z][a-z]*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="typePozycja">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Menadżer"/>
+            <xs:enumeration value="Sprzedawca"/>
+            <xs:enumeration value="Dostawca"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="typeAdres">
+        <xs:all>
+            <xs:element name="miejscowosc" type="xs:string"/>
+            <xs:element name="kodPocztowy" type="typeKodPocztowy"/>
+            <xs:element name="ulica" type="xs:string"/>
+            <xs:element name="numer" type="xs:unsignedShort"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:simpleType name="typeKodPocztowy">
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:totalDigits value="5"/>
+            <xs:minInclusive value='10000'/>
+            <xs:maxInclusive value='99999'/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="typeTelefon">
+        <xs:restriction base="xs:unsignedLong">
+            <xs:totalDigits value="9"/>
+            <xs:minInclusive value='100000000'/>
+            <xs:maxInclusive value='999999999'/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="typePensja">
+        <xs:simpleContent>
+            <xs:extension base="xs:positiveInteger">
+                <xs:attribute name="waluta" type="xs:string" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>

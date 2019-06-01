@@ -1,0 +1,2 @@
+"Sklep Komputerowy" 
+"Krzysztof Bohdanowicz" 

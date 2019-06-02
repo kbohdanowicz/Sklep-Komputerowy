@@ -9,7 +9,7 @@
 
     <xs:complexType name="typSklep">
         <xs:all>
-            <xs:element name="waluty" type="typeWaluty"/> 
+            <xs:element name="waluty" type="typeWaluty"/>
             <xs:element name="produkty" type="typeProdukty"/>
             <xs:element name="pracownicy" type="typePracownicy"/>
         </xs:all>

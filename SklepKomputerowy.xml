@@ -7,7 +7,7 @@
 -->
     <waluty>
         <waluta id="PLN">PLN</waluta>
-        <waluta id="PLN">$</waluta>
+        <waluta id="USD">$</waluta>                             <!--?-->
     </waluty>
 
     <produkty>
@@ -20,6 +20,7 @@
         </produkt>
 
         <produkt id="a02">
+            <kategoria>Podzespoły</kategoria>
             <nazwa>Procesor Ryzen 7 2700X</nazwa>
             <cena waluta="PLN">1959.99</cena>
             <opis>Odkryj bezkonkurencyjne zalety procesorów  Ryzen, które oferują najlepszą wydajność w najbardziej wymagających zadaniach. Procesory  Ryzen charakteryzują się niezwykle korzystnym stosunkiem ceny do wydajności i stanowią oczywisty wybór dla twórców treści cyfrowych, graczy i pasjonatów komputerowych</opis>
@@ -27,6 +28,7 @@
         </produkt>
 
         <produkt id="a03">
+            <kategoria>Podzespoły</kategoria>
             <nazwa>Zasilacz Corsair RM750x</nazwa>
             <cena waluta="PLN">789.99</cena>
             <opis>Zasilacz firmy Corsair o mocy 750W, posiadający certyfikat 80Plus Gold. Wyposażony został w cichy wentylator 135mm. Dodatkowo posiada aktywne PFC, system najważniejszych zabezpieczeń: OVP, UVP, SCP, OPP, OTP, a także złącza: ATX 24pin, CPU 4+4pin, PCI-E 6+2pin, SATA, Molex, FDD.</opis>
@@ -34,6 +36,7 @@
         </produkt>
 
         <produkt id="a04">
+            <kategoria>Podzespoły</kategoria>
             <nazwa>Pamięć RAM HyperX Fury</nazwa>
             <cena waluta="PLN">369.99</cena>
             <opis>Pamięć HyperX® FURY DDR4 przetrzyma nawet najcięższe próby.Automatycznie rozpoznaje platformę, w której jest zainstalowana i przetaktowuje się do najwyższej dostępnej częstotliwości (nawet do 2666 MHz1) – a gracz może poświęcić całą uwagę sianiu spustoszenia wśród przeciwników. Pamięć FURY DDR4 wymaga zaledwie 1,2 V, również przy częstotliwości 2666 MHz, więc nie przegrzewa się podczas rozgrywki. Ustawienie wyższych częstotliwości nie wymaga zmiany napięcia, czyli pozostałe elementy sprzętowe komputera mogą korzystać z większej mocy. Elegancki, asymetryczny radiator w czarnym kolorze zapewnia udoskonalone rozpraszanie ciepła i obniża temperaturę systemu, a jego wygląd nie pozostawi nikogo obojętnym.</opis>
@@ -41,6 +44,7 @@
         </produkt>
 
         <produkt id="a05">
+            <kategoria>Nośniki danych</kategoria>
             <nazwa>Dysk SSD GoodRam IRDM</nazwa>
             <cena waluta="PLN">549.99</cena>
             <opis>SSD IRDM oparty jest o sprawdzone i niezawodne rozwiązania – pamięci MLC i kontroler Phison S11. IRDM sprawdzi się zarówno jako pamięć cache jak i główny dysk w komputerach do szerokiego typu zastosowań. SSD IRDM oferuje solidne parametry, osiągając prędkości transferu sekwencyjnego do 550 MB/s dla odczytu i 540 MB/s dla zapisu. Wartość IOPS została wyspecyfikowana na poziomie do 61 000 dla operacji odczytu i 87 000 dla operacji zapisu. Dzięki wykorzystaniu klasycznego formatu 2,5” z interfejsem SATA III, SSD IRDM sprawdzi się w wielu rozwiązaniach, które nie dysponują szybszymi złączami PCI-e.</opis>
@@ -48,6 +52,7 @@
         </produkt>
 
         <produkt id="a06">
+            <kategoria>Nośniki danych</kategoria>
             <nazwa>Dysk HDD Toshiba P300</nazwa>
             <cena waluta="PLN">199.99</cena>
             <opis>3,5-calowy wewnętrzny dysk twardy Toshiba P300 to gwarancja wysokiej wydajności dla profesjonalistów. Dzięki technologii dwuetapowego ruchu głowicy można liczyć na płynne, szybkie reakcje urządzenia. Poza tym dane i multimedia są chronione przez technologię parkowania głowicy, zapobiegającą uszkodzeniom w czasie przenoszenia, a także czujnik wstrząsów. </opis>
@@ -55,6 +60,7 @@
         </produkt>
 
         <produkt id="a07">
+            <kategoria>Nośniki danych</kategoria>
             <nazwa>Pendrive SanDisk Ultra Flair Drive </nazwa>
             <cena waluta="PLN">49.99</cena>
             <opis>Pamięć USB 3.0 SanDisk Ultra Flair™ umożliwia szybkie przenoszenie plików. Nie marnuj czasu czekając na skopiowanie dużych plików i korzystaj z zawrotnej prędkości oferowanej przez standard USB 3.0 wynoszącej do 150 MB/s1. Dzięki prędkości zapisu do 15 razy wyższej niż w przypadku zwykłych pamięci USB 2.01przenoszenie filmów pełnometrażowych trwa krócej niż 30 sekund2.</opis>
@@ -62,6 +68,7 @@
         </produkt>
 
         <produkt id="a08">
+            <kategoria>Nośniki danych</kategoria>
             <nazwa>Karta pamięci ADATA SDHC</nazwa>
             <cena waluta="USD">69.99</cena>
             <opis>Typ karty Secure Digital High Capacity Ultra HighSpeed 1 (SDHC-UHS-I)
@@ -79,6 +86,7 @@
         </produkt>
 
         <produkt id="a09">
+            <kategoria>Audio</kategoria>
             <nazwa>Głośniki komputerowe Genius SP-HF1800A</nazwa>
             <cena waluta="PLN">239.99</cena>
             <opis>Genius SP-HF1800A dysponują mocą 50W RMS. Do ich budowy wykorzystano 1-calowe głośniki wysokotonowe oraz dwa główne o średnicy 4 cali. Pasmo przenoszenia rozpoczyna się od 20Hz, kończy natomiast na 20kHz. Produkt dostępny jest w kolorze czarnym, co w połączeniu z białymi membranami tworzy ciekawy efekt wizualny.</opis>
@@ -86,8 +94,9 @@
         </produkt>
 
         <produkt id="a10">
+            <kategoria>Audio</kategoria>
             <nazwa>Słuchawki Razer Nari</nazwa>
-            <cena waluta="USD">89.99</cena>
+            <cena waluta="PLN">799.99</cena>
             <opis>THX Spatial Audio
                 Poduszki chłodzone żelem
                 Bilans w grze / na czacie
@@ -109,6 +118,7 @@
         </produkt>
 
         <produkt id="a11">
+            <kategoria>Audio</kategoria>
             <nazwa>Słuchawki AKG K240 MKII </nazwa>
             <cena waluta="PLN">289.99</cena>
             <opis>Model AKG K 240 MK II to nowe, profesjonalne słuchawki studyjne należące do wyjątkowo udanej serii słuchawek wyposażonych w przetworniki XXL oraz technologię Varimotion . Wyposażone są w kapsuły wokół uszne o konstrukcji półotwartej zapewniające mocny bas, precyzyjny środek i kryształowo czystą górę. Dzięki zwiększeniu impedancji słuchawki mogą współpracować z komputerem i innymi urządzeniami o niewielkiej mocy wyjściowej. </opis>
@@ -116,6 +126,7 @@
         </produkt>
 
         <produkt id="a12">
+            <kategoria>Audio</kategoria>
             <nazwa>ISK Audio ISK HD9999</nazwa>
             <cena waluta="PLN">349.99</cena>
             <opis>Słuchawki HD9999 zostały skonstruowane z myślą o mocnym graniu. Doskonale czują się w muzyce z cięższym uderzeniem – rockowej i metalowej ale również w elektronicznej z silnym podłożem basowym. </opis>
@@ -123,6 +134,7 @@
         </produkt>
 
         <produkt id="a13">
+            <kategoria>Pozostałe</kategoria>
             <nazwa>Monitor MSI Optix MAG241C</nazwa>
             <cena waluta="PLN">1119.99</cena>
             <opis>Gamingowe monitory MSI charakteryzują się częstotliwością odświeżania wynoszącą 144 Hz oraz 1-milisekundowym, poziomym czasem odpowiedzi matrycy. Czas ten jest szczególnie istotny w wypadku tytułów zawierających szybkie, dynamiczne sceny, takich jak: gry z gatunku FPS (First Person Shooter), „bijatyki”, gry wyścigowe, Simsy, strategie czasu rzeczywistego czy gry sportowe. </opis>
@@ -130,6 +142,7 @@
         </produkt>
 
         <produkt id="a14">
+            <kategoria>Pozostałe</kategoria>
             <nazwa>Klawiatura Sharkoon Skiller Mech SGK1 Kailh Red</nazwa>
             <cena waluta="PLN">229.99</cena>
             <opis>Niemiecki producent Sharkoon wypuszcza na nasz rynek nową trzecią wersję najlepiej sprzedającego się mechanika. Tym razem mowa o klawiaturze gamingowej Sharkoon SKILLER MECH SGK1 Kalih Red. Model ten ma do wyboru 16.8 milionów kolorów podświetlenia. Dodatkowo możemy wybrać na nim 20 fabrycznie ustawionych efektów, a także 5 poziomów jasności czy nawet szybkość pokazywania tych efektów. Jakby tego było mało to możemy sami pobawić się w stworzenie własnego efektu. Oczywiście całe podświetlenie można także wyłączyć.</opis>
@@ -137,15 +150,17 @@
         </produkt>
 
         <produkt id="a15">
+            <kategoria>Pozostałe</kategoria>
             <nazwa>Klawiatura Natec Genesis RX22 </nazwa>
-            <cena waluta="PLN">229.99</cena>
+            <cena waluta="USD">129.99</cena>
             <opis>Podświetlana klawiatura gamingowa Natec Genesis RX22 to produkt dedykowany dla graczy, którzy za niewielkie pieniądze mogą cieszyć się funkcjonalnym, wytrzymałym sprzętem w nowoczesnym wydaniu. Dzięki technologii X-Scissors i niskiemu profilowi, klawiatura cechuje się cichą i precyzyjną pracą klawiszy. Klawiatura dla graczy Natec Genesis RX22 to niedrogie rozwiązanie dla graczy, którzy cenią sobie funkcjonalność, oraz wysoką niezawodność sprzętu.</opis>
             <producent>Natec</producent>
         </produkt>
 
         <produkt id="a16">
+            <kategoria>Pozostałe</kategoria>
             <nazwa>Mysz Razer Naga Trinity</nazwa>
-            <cena waluta="PLN">189.99</cena>
+            <cena waluta="PLN">589.99</cena>
             <opis>Razer Naga Trinity to mysz zapewniająca przewagę w grach MOBA/MMO, którą możesz dostosować pod kątem zarówno używanej broni, jak i postaci, dzięki czemu będziesz zawsze o krok przed przeciwnikami.</opis>
             <producent>Razer</producent>
         </produkt>

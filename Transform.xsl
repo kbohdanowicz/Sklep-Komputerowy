@@ -18,9 +18,9 @@
                     </tr>
                     <xsl:for-each select="/sklep/produkty/produkt">
                         <xsl:sort select="cena" data-type="number"/>
-                        <tr>
-                            <td style="color:darkbrown"><b><xsl:value-of select="nazwa"/></b></td>
-                            <td style="color:orange"><xsl:value-of select="kategoria"/></td>
+                        <tr bgcolor="color:pink">
+                            <td><b><xsl:value-of select="nazwa"/></b></td>
+                            <td style="color:brown"><xsl:value-of select="kategoria"/></td>
                             <td style="color:blue"><u><xsl:value-of select="cena"/></u></td>
                             <xsl:choose>
                                 <xsl:when test="producent='Razer'">

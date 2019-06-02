@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="Style.css" ?>
 <!--<!DOCTYPE sklep SYSTEM "Dane.dtd">-->
 <sklep xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="Schema.xsd">
@@ -6,8 +7,8 @@
      xsi:noNamespaceSchemaLocation="Schema.xsd">
 -->
     <waluty>
-        <waluta id="PLN">PLN</waluta>
-        <waluta id="USD">$</waluta>                             <!--?-->
+        <waluta id="PLN">zł</waluta>
+        <waluta id="USD">$</waluta>
     </waluty>
 
     <produkty>
@@ -70,7 +71,7 @@
         <produkt id="a08">
             <kategoria>Nośniki danych</kategoria>
             <nazwa>Karta pamięci ADATA SDHC</nazwa>
-            <cena waluta="USD">69.99</cena>
+            <cena waluta="PLN">69.99</cena>
             <opis>Typ karty Secure Digital High Capacity Ultra HighSpeed 1 (SDHC-UHS-I)
                 Technika zapisu pamięci Flash
                 Pojemność karty 32 GB
@@ -152,7 +153,7 @@
         <produkt id="a15">
             <kategoria>Pozostałe</kategoria>
             <nazwa>Klawiatura Natec Genesis RX22 </nazwa>
-            <cena waluta="USD">129.99</cena>
+            <cena waluta="PLN">129.99</cena>
             <opis>Podświetlana klawiatura gamingowa Natec Genesis RX22 to produkt dedykowany dla graczy, którzy za niewielkie pieniądze mogą cieszyć się funkcjonalnym, wytrzymałym sprzętem w nowoczesnym wydaniu. Dzięki technologii X-Scissors i niskiemu profilowi, klawiatura cechuje się cichą i precyzyjną pracą klawiszy. Klawiatura dla graczy Natec Genesis RX22 to niedrogie rozwiązanie dla graczy, którzy cenią sobie funkcjonalność, oraz wysoką niezawodność sprzętu.</opis>
             <producent>Natec</producent>
         </produkt>
@@ -192,7 +193,7 @@
             <nazwisko>Pajeet</nazwisko>
             <telefon>213714887</telefon>
             <pozycja>Dostawca</pozycja>
-            <pensja waluta="USD">2000</pensja>
+            <pensja waluta="USD">1900</pensja>
         </pracownik>
 
         <pracownik plec="m">
@@ -206,7 +207,7 @@
             <nazwisko>Wedrowycz</nazwisko>
             <telefon>100000000</telefon>
             <pozycja>Sprzedawca</pozycja>
-            <pensja>4000</pensja>
+            <pensja waluta="PLN">4000</pensja>
         </pracownik>
 
         <pracownik plec="m">
@@ -220,7 +221,7 @@
             <nazwisko>Carmack</nazwisko>
             <telefon>767453285</telefon>
             <pozycja>Sprzedawca</pozycja>
-            <pensja>3500</pensja>
+            <pensja waluta="PLN">3500</pensja>
         </pracownik>
     </pracownicy>
 

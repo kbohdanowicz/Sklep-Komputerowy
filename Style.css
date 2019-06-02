@@ -1,0 +1,214 @@
+waluty {
+    border-style: solid;
+    border-width: thick;
+    border-color: black;
+    float: left;
+    padding: 4px;
+    margin: 4px;
+    background-color: lightsalmon;
+    border-radius: 26px;
+    font-family: "Comic Sans MS", serif;
+    font-size: 19px;
+}
+waluty:before{
+    content: "Waluty:";
+}
+
+waluta{
+    display: block;
+    border-width: thin;
+    border-style: ridge;
+    border-color: black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 4px;
+    background-color: lightslategray;
+    font-family: "Comic Sans MS", serif;
+    font-size: 16px;
+}
+
+waluta[id='PLN']:before{
+    content: "PLN (";
+}
+waluta[id='PLN']:after{
+    content: ")";
+}
+
+waluta[id='USD']:before{
+    content: "USD (";
+}
+waluta[id='USD']:after{
+    content: ")";
+}
+
+waluta[id='PLN']:hover{
+    background-color: #ffc600;
+}
+
+waluta[id='USD']:hover{
+    background-color: #12ff00;
+}
+
+produkty{
+    border-style: groove;
+    border-width: thick;
+    border-color: #ff00f3;
+    border-radius: 26px;
+    float: left;
+    padding: 4px;
+    margin: 4px;
+    background-color: #54adff;
+}
+
+produkt{
+    display: block;
+    border-width: 2px;
+    border-style: ridge;
+    border-color: black;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 4px;
+    background-color: lightsteelblue;
+    font-family: "Georgia", serif;
+    text-align:justify
+}
+
+produkt:hover {
+    background-color: beige;
+}
+
+kategoria{
+    display: block;
+    font-size: 16px;
+}
+kategoria:before{
+    content: "Kategoria: ";
+    font-weight: bold;
+}
+
+nazwa{
+    display: block;
+    font-size: 16px;
+}
+nazwa:before{
+    content: "Nazwa: ";
+    font-weight: bold;
+}
+
+cena{
+     display: block;
+     font-size: 16px;
+ }
+cena:before{
+    content: "Cena: ";
+    font-weight: bold;
+}
+
+opis{
+    display: block;
+    font-size: 13px;
+}
+opis:before{
+    content: "Opis: ";
+    font-weight: bold;
+}
+
+producent{
+    display: block;
+    font-size: 16px;
+}
+producent:before{
+    content: "Producent: ";
+    font-weight: bold;
+}
+
+pracownicy{
+    border-style: outset;
+    border-width: thick;
+    border-color: cyan;
+    float: left;
+    padding: 4px;
+    margin: 4px;
+    background-color: lightcoral;
+}
+
+pracownik{
+    display: block;
+    border-width: thin;
+    border-style: ridge;
+    border-color: black;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 4px;
+    background-color: lightgoldenrodyellow;
+    font-family: "Lucida Console", serif;
+}
+
+pracownik[plec = 'k'] > adres:before{
+    font-weight: bold;
+    content: url("https://inf.ug.edu.pl/~lmielewczyk/teaching/ss/proj-jez-xml/lab/files/oznaczenieKobieta.png") "Adres:";
+}
+
+pracownik[plec = 'm'] > adres:before{
+    font-weight: bold;
+    content: url("https://inf.ug.edu.pl/~lmielewczyk/teaching/ss/proj-jez-xml/lab/files/oznaczenieMezczyzna.png") "Adres:";
+}
+
+pracownik[plec = 'k']:hover{
+    background-color: #ff10c8;
+}
+
+pracownik[plec = 'm']:hover{
+    background-color: royalblue;
+}
+
+adres{
+    display: block;
+    font-size: 16px;
+}
+
+imie{
+    display: block;
+    font-size: 16px;
+}
+imie:before{
+    content: "Imię: ";
+    font-weight: bold;
+}
+
+nazwisko{
+    display: block;
+    font-size: 16px;
+}
+nazwisko:before{
+    content: "Nazwisko: ";
+    font-weight: bold;
+}
+
+telefon{
+    display: block;
+    font-size: 16px;
+}
+telefon:before{
+    content: "Telefon: ";
+    font-weight: bold;
+}
+
+pozycja{
+    display: block;
+    font-size: 16px;
+}
+pozycja:before{
+    content: "Pozycja: ";
+    font-weight: bold;
+}
+
+pensja{
+    display: block;
+    font-size: 16px;
+}
+pensja:before{
+    content: "Pensja: ";
+    font-weight: bold;
+}
+
